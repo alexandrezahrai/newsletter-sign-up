@@ -40,4 +40,4 @@ The application fulfills the following requirements set by the Frontend Mentor c
 
 ## Links
 
-- Live Site URL: [Demo](https://newsletter-sign-up-gamma.vercel.app/)
+- Live Site URL: [Demo](https://newsletter-sign-up-tailwind.vercel.app/)
