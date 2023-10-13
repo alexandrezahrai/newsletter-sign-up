@@ -637,12 +637,6 @@ video {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
-.font-body {
-  font-family: Roboto-Regular, sans-serif;
-}
-.font-heading {
-  font-family: Roboto-Bold, sans-serif;
-}
 .text-\[12px\] {
   font-size: 12px;
 }
@@ -692,6 +686,14 @@ video {
 @font-face {
   font-family: "Roboto-Regular";
   src: url("/public/assets/fonts/Roboto-Regular.ttf")
+}
+
+.text-heading {
+  font-family: Roboto-Bold, sans-serif;
+}
+
+.text-body {
+  font-family: Roboto-Regular, sans-serif;
 }
 
 /* Scaffolding */

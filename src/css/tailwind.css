@@ -13,6 +13,14 @@
   src: url("/public/assets/fonts/Roboto-Regular.ttf")
 }
 
+.text-heading {
+  @apply font-robotoBold;
+}
+
+.text-body {
+  @apply font-roboto;
+}
+
 /* Scaffolding */
 #signup-form {
   animation: fadeEffect 400ms ease-in-out;
@@ -30,7 +38,7 @@
 
 /* Buttons */
 .button {
-  @apply font-heading px-6 py-4 rounded-lg;
+  @apply text-heading px-6 py-4 rounded-lg;
 }
 
 .button-primary {

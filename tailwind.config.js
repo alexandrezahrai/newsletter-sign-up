@@ -26,8 +26,8 @@ module.exports = {
         "light-grey": "#D6D6D6",
       },
       fontFamily: {
-        heading: ["Roboto-Bold", "sans-serif"],
-        body: ["Roboto-Regular", "sans-serif"],
+        robotoBold: ["Roboto-Bold", "sans-serif"],
+        roboto: ["Roboto-Regular", "sans-serif"],
       },
     },
   },
