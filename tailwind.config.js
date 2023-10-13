@@ -27,7 +27,7 @@ module.exports = {
       },
       fontFamily: {
         heading: ["Roboto Bold", "sans-serif"],
-        body: ["Roboto Regular", "sans"],
+        body: ["Roboto Regular", "sans-serif"],
       },
     },
   },
