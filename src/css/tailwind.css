@@ -14,13 +14,11 @@
 }
 
 .text-heading {
-  /* @apply font-robotoBold; */
-  font-family: "Roboto-Bold", "sans-serif";
+  @apply font-robotoBold;
 }
 
 .text-body {
-  /* @apply font-roboto; */
-  font-family: "Roboto-Regular", "sans-serif";
+  @apply font-roboto;
 }
 
 /* Scaffolding */
