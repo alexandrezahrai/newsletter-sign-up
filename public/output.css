@@ -638,10 +638,10 @@ video {
   padding-bottom: 2.5rem;
 }
 .font-body {
-  font-family: Roboto Regular, sans-serif;
+  font-family: Roboto-Regular, sans-serif;
 }
 .font-heading {
-  font-family: Roboto Bold, sans-serif;
+  font-family: Roboto-Bold, sans-serif;
 }
 .text-\[12px\] {
   font-size: 12px;
@@ -685,12 +685,12 @@ video {
 
 /* Typography */
 @font-face {
-  font-family: "Roboto Bold";
+  font-family: "Roboto-Bold";
   src: url("/public/assets/fonts/Roboto-Bold.ttf")
 }
 
 @font-face {
-  font-family: "Roboto Regular";
+  font-family: "Roboto-Regular";
   src: url("/public/assets/fonts/Roboto-Regular.ttf")
 }
 
@@ -724,7 +724,7 @@ video {
   padding-right: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-family: Roboto Bold, sans-serif;
+  font-family: Roboto-Bold, sans-serif;
 }
 
 .button-primary {
@@ -733,7 +733,7 @@ video {
   padding-right: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-family: Roboto Bold, sans-serif;
+  font-family: Roboto-Bold, sans-serif;
   --tw-bg-opacity: 1;
   background-color: hsl(234 29% 20% / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
