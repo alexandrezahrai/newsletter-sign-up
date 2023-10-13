@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Newsletter sign-up form with success message | Frontend Mentor Challenge
+    </title>
+
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body class="text-base bg-charcoal font-body text-dark-slate">
+    <main class="flex justify-center items-center w-full h-full min-h-screen">
+      <section class="container mx-auto">
+        <div
+          id="content"
+          class="max-w-[950px] mx-auto md:rounded-[40px] overflow-hidden shadow-custom"
+        >
+          <div
+            id="signup-form"
+            class="bg-white flex justify-center items-center lg:gap-16 flex-col-reverse lg:flex-row"
+          >
+            <div class="w-full lg:w-1/2 px-6 py-10 md:p-16 lg:pr-0">
+              <h1
+                class="font-heading text-[44px] lg:text-[56px] leading-none mb-6"
+              >
+                Stay updated!
+              </h1>
+              <p class="mb-5">
+                Join 60,000+ product managers receiving monthly updates on:
+              </p>
+              <ul class="list-none mb-8">
+                <li class="flex items-start gap-4 mb-2">
+                  <img src="assets/images/icon-list.svg" />
+                  <p>Product discovery and building what matters</p>
+                </li>
+                <li class="flex items-start gap-4 mb-2">
+                  <img src="assets/images/icon-list.svg" />
+                  <p>Meausring to ensure updates are a success</p>
+                </li>
+                <li class="flex items-start gap-4">
+                  <img src="assets/images/icon-list.svg" />
+                  <p>And much more!</p>
+                </li>
+              </ul>
+
+              <form
+                id="newsletter-form"
+                name="newsletter"
+                class="flex flex-col gap-6"
+                onsubmit="validateForm(event)"
+                method="post"
+              >
+                <div class="flex flex-col gap-2">
+                  <div class="flex justify-between items-center">
+                    <p id="form-heading" class="block font-heading text-[12px]">
+                      Email address
+                    </p>
+                    <p
+                      id="form-required"
+                      class="hidden font-heading text-[12px] text-tomato"
+                    >
+                      Valid email required
+                    </p>
+                  </div>
+                  <input
+                    type="email"
+                    id="email-input"
+                    name="email"
+                    placeholder="email@company.com"
+                    autocomplete="off"
+                    class="ring-1 ring-light-grey focus:ring-1 focus:ring-dark-slate focus-visible:ring-1 focus-visible:ring-dark-slate rounded-lg p-4 outline-none"
+                  />
+                </div>
+                <input
+                  type="submit"
+                  value="Subscribe to monthly newsletter"
+                  class="button-primary cursor-pointer"
+                />
+              </form>
+            </div>
+
+            <div class="w-full lg:w-1/2 lg:p-6 lg:pl-0">
+              <img
+                src="assets/images/illustration-sign-up-desktop.svg"
+                class="w-full h-full object-cover object-center hidden lg:block"
+              />
+              <img
+                src="assets/images/illustration-sign-up-mobile.svg"
+                class="w-full h-full object-cover object-center lg:hidden"
+              />
+            </div>
+          </div>
+          <div id="details" class="hidden bg-white px-6 py-10 md:p-16 flex-col">
+            <img
+              class="w-[68px] mb-10"
+              alt="success icon"
+              src="assets/images/icon-success.svg"
+            />
+            <h1
+              class="font-heading text-[44px] lg:text-[56px] leading-none mb-6"
+            >
+              Thanks for subscribing!
+            </h1>
+
+            <p>
+              A confirmation email has been sent to
+              <span id="details-email" class="font-heading"></span>. Please open
+              it and click the button inside to confirm your subscription.
+            </p>
+
+            <button
+              class="button-primary mt-10"
+              onclick="window.location.reload()"
+            >
+              <span>Dismiss Message</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

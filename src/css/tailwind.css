@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Typography */
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("/public/assets/fonts/Roboto-Bold.ttf")
+}
+
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("/public/assets/fonts/Roboto-Regular.ttf")
+}
+
+/* Scaffolding */
+#signup-form {
+  animation: fadeEffect 400ms ease-in-out;
+}
+
+/* Forms */
+#email-input.required {
+  @apply ring-tomato;
+  @apply bg-salmon;
+}
+
+#email-input.required::placeholder {
+  @apply text-tomato;
+}
+
+/* Buttons */
+.button {
+  @apply font-heading px-6 py-4 rounded-lg;
+}
+
+.button-primary {
+  @apply button;
+  @apply bg-dark-slate text-white transition-colors duration-300 ease-in-out;
+  @apply hover:bg-charcoal;
+}
+
+/* Animations */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
