@@ -689,11 +689,13 @@ video {
 }
 
 .text-heading {
-  font-family: Roboto-Bold, sans-serif;
+  /* @apply font-robotoBold; */
+  font-family: "Roboto-Bold", "sans-serif";
 }
 
 .text-body {
-  font-family: Roboto-Regular, sans-serif;
+  /* @apply font-roboto; */
+  font-family: "Roboto-Regular", "sans-serif";
 }
 
 /* Scaffolding */
@@ -726,7 +728,8 @@ video {
   padding-right: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-family: Roboto-Bold, sans-serif;
+  /* @apply font-robotoBold; */
+  font-family: "Roboto-Bold", "sans-serif";
 }
 
 .button-primary {
@@ -735,7 +738,8 @@ video {
   padding-right: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-family: Roboto-Bold, sans-serif;
+  /* @apply font-robotoBold; */
+  font-family: "Roboto-Bold", "sans-serif";
   --tw-bg-opacity: 1;
   background-color: hsl(234 29% 20% / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
