@@ -637,6 +637,9 @@ video {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
+.font-roboto {
+  font-family: Roboto, sans-serif;
+}
 .text-\[12px\] {
   font-size: 12px;
 }
@@ -646,6 +649,12 @@ video {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-normal {
+  font-weight: 400;
 }
 .leading-none {
   line-height: 1;
@@ -675,25 +684,6 @@ video {
 .ring-light-grey {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(214 214 214 / var(--tw-ring-opacity));
-}
-
-/* Typography */
-@font-face {
-  font-family: "Roboto-Bold";
-  src: url("/public/assets/fonts/Roboto-Bold.ttf")
-}
-
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url("/public/assets/fonts/Roboto-Regular.ttf")
-}
-
-.text-heading {
-  font-family: Roboto-Bold, sans-serif;
-}
-
-.text-body {
-  font-family: Roboto-Regular, sans-serif;
 }
 
 /* Scaffolding */
@@ -726,7 +716,8 @@ video {
   padding-right: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-family: Roboto-Bold, sans-serif;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
 }
 
 .button-primary {
@@ -735,7 +726,8 @@ video {
   padding-right: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-family: Roboto-Bold, sans-serif;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
   --tw-bg-opacity: 1;
   background-color: hsl(234 29% 20% / var(--tw-bg-opacity));
   --tw-text-opacity: 1;

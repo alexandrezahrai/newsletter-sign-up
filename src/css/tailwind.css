@@ -2,25 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Typography */
-@font-face {
-  font-family: "Roboto-Bold";
-  src: url("/public/assets/fonts/Roboto-Bold.ttf")
-}
-
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url("/public/assets/fonts/Roboto-Regular.ttf")
-}
-
-.text-heading {
-  @apply font-robotoBold;
-}
-
-.text-body {
-  @apply font-roboto;
-}
-
 /* Scaffolding */
 #signup-form {
   animation: fadeEffect 400ms ease-in-out;
@@ -38,7 +19,8 @@
 
 /* Buttons */
 .button {
-  @apply text-heading px-6 py-4 rounded-lg;
+  @apply px-6 py-4 rounded-lg;
+  @apply font-roboto font-bold;
 }
 
 .button-primary {
