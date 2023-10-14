@@ -9,7 +9,7 @@
 
 /* Forms */
 #email-input.required {
-  @apply ring-tomato;
+  @apply border-tomato;
   @apply bg-salmon;
 }
 
